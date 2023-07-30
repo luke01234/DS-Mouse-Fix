@@ -305,7 +305,7 @@ struct Input* DEM_Input_Reader()
       fprintf(DEMInputs, "Next Weapon = 0x05\n");
       fprintf(DEMInputs, "Interact = 0x45\n");
       fprintf(DEMInputs, "Items = 0x47\n");
-      fprintf(DEMInputs, "Resume = 0x32\n");
+      fprintf(DEMInputs, "Resume = 0x56\n");
       fprintf(DEMInputs, "Map = 0x4D\n");
       fprintf(DEMInputs, "Sprint = 0xA0\n");
 
