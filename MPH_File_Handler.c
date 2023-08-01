@@ -1,6 +1,5 @@
 /*
-Author: Luke Attard
-Date: 7/30/23
+Develped by Luke Attard
 purpose: This file containts the file handler and Input Generator for Metroid Prime Hunters games.
 */
 

@@ -1,6 +1,5 @@
 /*
-Author: Luke Attard
-Date: 7/30/23
+Develped by Luke Attard
 purpose: This file contains the main file handler that calls other file handlers (input readers) depending on what game was selected in the UI
 */
 

@@ -1,6 +1,5 @@
 /*
-Author: Luke Attard
-Date: 7/29/23
+Develped by Luke Attard
 purpose: This file contains all UI elements of the script control. Creates a simple UI with drop down menu, start button and text box explaining functionality.
 
 NOTE: COMPILE THIS FILE WHEN REBUILDING
@@ -148,6 +147,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) 
                 on = 1;
                 paused = 0;
                 Run();
+                FlashWindow(hwnd,1);
                 brush = CreateSolidBrush(RGB(40, 49, 117));
                 SetClassLongPtr(hwnd, GCLP_HBRBACKGROUND, (LONG_PTR)brush);
                 SendMessage(hwnd,WM_PAINT,wParam,lParam);

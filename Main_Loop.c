@@ -1,6 +1,5 @@
 /*
-Author: Luke Attard
-Date: 7/30/23
+Develped by Luke Attard
 purpose: This file contains the mainloop for the script, it initializes the playspace and the controls, as well as any other necessary values, then it begins polling the input list
 */
 

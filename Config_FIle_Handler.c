@@ -1,6 +1,5 @@
 /*
-Author: Luke Attard
-Date: 7/30/23
+Develped by Luke Attard
 purpose: This file containts the config reader for this script as a whole. It reads the wait times that the game functions operate on. 
 */
 
@@ -33,7 +32,7 @@ void ConfigReader()
     if (ConFile != NULL) 
     {
       // Write data to the ConFile if needed
-      fprintf(ConFile, "\nVALUES\n\n");
+      fprintf(ConFile, "VALUES\n\n");
       fprintf(ConFile, "mouseResetWait = 35\nbuttonWait = 120\nswapWait = 220\nkeyWait = 50\n\n");
       
       // Close the ConFile

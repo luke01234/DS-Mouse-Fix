@@ -1,6 +1,5 @@
 /*
-Author: Luke Attard
-Date: 7/30/23
+Develped by Luke Attard
 purpose: This file contains a struct used to listen for user inputs and perform actions accordingly. 
 The struct contains: 
   an int to determine if the button is down or not

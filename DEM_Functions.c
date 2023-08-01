@@ -1,6 +1,5 @@
 /*
-Author: Luke Attard
-Date: 7/30/23
+Develped by Luke Attard
 purpose: This file containts the game functions necessary for the Dementium games. Each function contains necessary keypresses/mouse events to form macros for in game inputs.
 */
 

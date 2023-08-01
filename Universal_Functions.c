@@ -1,12 +1,15 @@
 /*
-Author: Luke Attard
-Date: 7//23
+Develped by Luke Attard
 purpose: This file contains functions that are used in each of the other "XXX_Functions.c" files. These are necessary for all the games to run.
 */
 
 extern int mouseUp, mouseDown, activeMouse;
 
 extern float mouseResetWait, buttonWait, swapWait, keyWait;
+
+extern RECT playSpace;
+
+RECT tempRect;
 
 extern POINT center;
 
@@ -46,6 +49,11 @@ void GetActiveMouseUp(float *waitTime)
   }
 }
 
+void LockPlaySpace()
+{
+  ClipCursor(&playSpace);
+}
+
 //lift the cursor
 void CursorUp()
 {
@@ -54,13 +62,17 @@ void CursorUp()
 }
 
 //Reset mouse to center of playspace
-int ResetPos()
+void ResetPos()
 {
   mouse_event(mouseUp,0,0,0,0);
   GetActiveMouseUp(&mouseResetWait);
   SetCursorPos(center.x,center.y);
   mouse_event(mouseDown,0,0,0,0);
-  return 0;
+  GetClipCursor(&tempRect);
+  if (tempRect.left != playSpace.left && tempRect.right != playSpace.right && tempRect.top != playSpace.top && tempRect.bottom != playSpace.bottom)
+  {
+    LockPlaySpace();
+  }
 }
 
 //Reset mouse to center of playspace after pressing a button (added delay to make sure button press is heard)
