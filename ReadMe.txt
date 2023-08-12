@@ -129,3 +129,7 @@ Special Weapon (MPH) 1 - 6 = 1 - 6 keys
 Swap to main weapon (MPH) = Q key
 Swap to missiles (MPH) = E key
 Swap to third weapon = R key
+Select "Yes" in menu = Mouse Back button
+Select "No" in menu = Mouse Forward button
+Select Left Arrow in menu = Z key
+Select Right Arrow in menu = C key
