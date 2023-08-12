@@ -1,6 +1,6 @@
 /*
-Develped by Luke Attard
 purpose: This file contains the main file handler that calls other file handlers (input readers) depending on what game was selected in the UI
+Developed by: Luke Attard
 */
 
 #include "GameFunctions.c"

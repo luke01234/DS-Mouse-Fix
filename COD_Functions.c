@@ -1,6 +1,6 @@
 /*
-Develped by Luke Attard
 purpose: This file containts the game functions necessary for the COD games. Each function contains necessary keypresses/mouse events to form macros for in game inputs.
+Developed by: Luke Attard
 */
 
 extern int leftBound, rightBound, topBound, bottomBound, weaponGrenadeToggle;

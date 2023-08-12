@@ -1,9 +1,11 @@
 /*
-Develped by Luke Attard
 purpose: This file containts the config reader for this script as a whole. It reads the wait times that the game functions operate on. 
+Developed by: Luke Attard
 */
 
 extern float mouseResetWait, buttonWait, swapWait, keyWait;
+
+extern int autoMouseDrag;
 
 extern int totalInputs;
 extern int gameSelected;
@@ -33,7 +35,7 @@ void ConfigReader()
     {
       // Write data to the ConFile if needed
       fprintf(ConFile, "VALUES\n\n");
-      fprintf(ConFile, "mouseResetWait = 35\nbuttonWait = 120\nswapWait = 220\nkeyWait = 50\n\n");
+      fprintf(ConFile, "mouseResetWait = 35\nbuttonWait = 120\nswapWait = 220\nkeyWait = 50\nautoMouseDrag = 1\n");
       
       // Close the ConFile
       fclose(ConFile);
@@ -79,6 +81,11 @@ void ConfigReader()
       {
         removeSubstring(line, "keyWait = ");
         keyWait = atof(line);
+      }
+      else if (strstr(line,"autoMouseDrag = ")!=NULL)
+      {
+        removeSubstring(line, "autoMouseDrag = ");
+        autoMouseDrag = atoi(line);
       }
     }
     // Close the ConFile

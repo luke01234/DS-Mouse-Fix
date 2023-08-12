@@ -1,6 +1,6 @@
 /*
-Develped by Luke Attard
 purpose: This file containts the file handler and Input Generator for Metroid Prime Hunters games.
+Developed by: Luke Attard
 */
 
 extern float mouseResetWait, buttonWait, swapWait, keyWait;

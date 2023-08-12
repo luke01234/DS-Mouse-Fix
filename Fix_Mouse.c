@@ -1,6 +1,6 @@
 /*
-Develped by Luke Attard
 purpose: Reset mouse buttons to default functionality
+Developed by: Luke Attard
 */
 
 #include <windows.h>

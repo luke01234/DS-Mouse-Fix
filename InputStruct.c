@@ -1,6 +1,6 @@
 /*
-Develped by Luke Attard
 purpose: This file contains a struct used to listen for user inputs and perform actions accordingly. 
+Developed by: Luke Attard
 The struct contains: 
   an int to determine if the button is down or not
   a pointer to a game function

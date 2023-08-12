@@ -1,7 +1,7 @@
 /*
-Develped by Luke Attard
 purpose: This file contains all UI elements of the script control. Creates a simple UI with drop down menu, start button and text box explaining functionality.
 
+Developed by: Luke Attard
 NOTE: COMPILE THIS FILE WHEN REBUILDING
 */
 

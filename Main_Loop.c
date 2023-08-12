@@ -1,12 +1,12 @@
 /*
-Develped by Luke Attard
 purpose: This file contains the mainloop for the script, it initializes the playspace and the controls, as well as any other necessary values, then it begins polling the input list
+Developed by: Luke Attard
 */
 
 #include "FileHandler.c"
 #include <winuser.h>
 
-extern int on, paused;
+extern int on, paused, autoMouseDrag;
 
 extern POINT center;
 
@@ -44,7 +44,7 @@ int Run()
     {
       //get the cursor position and if out of playspace, reset
       GetCursorPos(&cursorPos);
-      if (cursorPos.x>=rightBound || cursorPos.x<=leftBound || cursorPos.y>=bottomBound || cursorPos.y<=topBound)
+      if ((cursorPos.x>=rightBound || cursorPos.x<=leftBound || cursorPos.y>=bottomBound || cursorPos.y<=topBound) && autoMouseDrag)
       {
         ResetPos(&center);
       }

@@ -1,6 +1,6 @@
 /*
-Develped by Luke Attard
 purpose: This file contains the driver functions, that either initialize the values for later functions, or poll the input list, with a few outliers that didnt fit into other files
+Developed by: Luke Attard
 */
 
 #include "InputStruct.c"
@@ -19,6 +19,7 @@ float screenWidthRatio, screenHeightRatio, referenceWidth = 587, referenceHeight
 
 float distanceFromBoarderSides = 50, distanceFromBoarderTop = 100, distanceNextButton = 100;
 float mouseResetWait = 35, buttonWait = 100, swapWait = 220, keyWait = 50;
+int autoMouseDrag = 1;
 
 RECT playSpace;
 
@@ -83,7 +84,7 @@ int InitializePoints(POINT* bottomLeft, POINT* topRight)
             //Initialize th center pixel of the playspace
             center.x = (((rightBound-leftBound)/2) + leftBound);
             center.y = (((bottomBound-topBound)/2) + topBound);
-
+            ResetPos();
             return 1;
           }
         }

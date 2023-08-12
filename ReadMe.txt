@@ -1,5 +1,6 @@
-DS Mouse Input Fix V 1.2
-Develped by Luke Attard
+DS Mouse Input Fix V 1.3
+Developed by: Luke Attard
+
 This tool aims to make DS FPS games more enjoyable by adding custom inputs that map to mouse inputs and keyboard macros, so that the player can simply focus on the game.
 
 IMPORTANT: IF THE SCRIPT CRASHES AND YOUR MOUSE 1 AND MOUS 2 INPUTS ARE STILL REVERSED, RUN "Fix Mouse.exe" THIS SHOULD FIX THE ISSUE
@@ -44,7 +45,7 @@ AGAIN ALWAYS REMEMBER: BACKSPACE TO KILL, RIGHT_SHIFT TO Pause
 
 ======================================================================================================================================================
 
-CHANGING WAIT TIMES
+CHANGING WAIT TIMES AND OTHER SETTINGS
 
 This script uses wait times within its inputs in order to make sure the DS emulator actually catches the desired input. Sometimes however these waits are too short, and can result in ghost inputs and camera stealing.
 To remedy this, there is a DS_Config.txt that this script will generate.
@@ -62,6 +63,14 @@ These are the defaults: mouseResetWait = 35, buttonWait = 100, swapWait = 220, k
 
 DO NOT define more than one of these values on the same line.
 DO NOT include any other text on a line in which these values are defined.
+
+Another Setting that can be changed in this config file is whether or not you want the program to automatically recenter and drag your mouse across your screen for you.
+This is done by changing the "autoMouseDrag" value. Set this equal to 0, to turn off auto mouse drag, or 1 to turn it on.
+By default, it is set to 1. 
+
+IMPORTANT:
+If you choose to play with this setting off, be warned you will have to drag your mouse with RIGHT CLICK, unless you bind a key to do it with external software, in which case, you will have to bind it to right click.
+You should also make sure that the keybinds config file does not have any function bound to RIGHT CLICK either if you choose to play with this setting off.
 
 If you mess up this file too much and start getting crashes, just delete this txt, and the script will fix it for you.
 
@@ -85,6 +94,7 @@ If you mess up these files too much and start getting crashes, just delete them,
 
 Here is a list of the default controls.
 
+Multiple games:
 Shoot/attack = left mouse
 ADS/Zoom = right mouse
 Reload = R key
