@@ -1,4 +1,4 @@
-DS Mouse Input Fix V 1.3
+DS Mouse Input Fix V 1.4
 Developed by: Luke Attard
 
 This tool aims to make DS FPS games more enjoyable by adding custom inputs that map to mouse inputs and keyboard macros, so that the player can simply focus on the game.
